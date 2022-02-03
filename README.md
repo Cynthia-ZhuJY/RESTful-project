@@ -9,7 +9,7 @@ This is a **backend system** built using the [RESTful API](https://www.redhat.co
 - [x] MangoDB
 - [x] [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/elasticsearch-intro.html), a distributed, full-text search engine developed in Java!
 
-## Why did I create this project?
+## Why is this project kinda a big deal?
 - [x] I was able to increase the performance of email and content text seach by **#30%** by creating index in MongoDB and full-text indexing documents in Elasticsearch.
 - [x] I refactored API request parameters with page numbers and page size. ~~Who doesn't wanna know how many more pages you have to read through until what you are looking for pops out?~~
 - [x] I improved Elasticseach full-text search result relevance of user feedback data by analyzing feedback text fields with tokenization and token filters of lower case, stop words, stemming, and edge N-gram, sorted by [TF/IDF](https://monkeylearn.com/blog/what-is-tf-idf/) relevance.
