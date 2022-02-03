@@ -20,4 +20,4 @@ This is a **backend system** built using the [RESTful API](https://www.redhat.co
 # Getting Down to Business...:woman_technologist:
 ## Features
 - The data dashboard that's developed in Java (SpringMVC) is consisted of a **controller**, two models (or POJO classes) named **data value object** and **data access object**.
- - The data access object is implemented as an interfce to allow future implementations, and has two functions: save data and find by ID.
+  - The data access object is implemented as an interfce to allow future implementations, and has two functions: save data and find by ID.
