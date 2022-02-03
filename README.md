@@ -6,7 +6,7 @@ This is a backend system built using the [RESTful API](https://www.redhat.com/en
 - [x] Spring Boot
 - [x] Spring Data
 - [x] MangoDB
-- [x] [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/elasticsearch-intro.html) 
+- [x] [Elasticsearch](https://www.elastic.co/guide/en/elasticsearch/reference/current/elasticsearch-intro.html), a distributed, full-text search engine developed in Java!
     1. Developed the RESTful backend system to let users submit and let internal teams to search user feedback emails and content data using Java, Spring Boot, Spring Data, MongoDB and Elasticsearch
     2. Increased email and content text search API’s performance by 30% by creating index in MongoDB and full-text indexing documents in Elasticsearch, also refactoring API request parameters with page number and page size
     3. Improved Elasticsearch full-text search result relevance of user feedback data by analyzing feedback text fields with tokenization and token filters of lower case, stop word, stemming and edge N-gram, sorted by TF/IDF relevance
