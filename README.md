@@ -13,6 +13,6 @@ This is a **backend system** built using the [RESTful API](https://www.redhat.co
 - [x] I was able to increase the performance of email and content text seach by **#30%** by creating index in MongoDB and full-text indexing documents in Elasticsearch.
 - [x] I refactored API request parameters with page numbers and page size. ~~Who doesn't wanna know how many more pages you have to read through until what you are looking for pops out?~~
 - [x] I improved Elasticseach full-text search result relevance of user feedback data by analyzing feedback text fields with tokenization and token filters of lower case, stop words, stemming, and edge N-gram, sorted by [TF/IDF](https://monkeylearn.com/blog/what-is-tf-idf/) relevance.
-- [x] I integrated Cabana tool with Elasticsearch for internal teams to explore and visualize. ~~Because we all love beautiful graphs!~~
+- [x] I integrated [Kibana](https://www.elastic.co/kibana/) with Elasticsearch for internal teams to explore and visualize. ~~Because we all love beautiful graphs!~~
 - [x] I wrote Swagger RESTful API documentation to improve  communication efficiency. 
 - [x] To complete this project, I implemented unit tests and the line coverage was able to achieve > 90% using Spring Boot Test.
