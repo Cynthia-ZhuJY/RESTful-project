@@ -20,5 +20,5 @@ This is a **backend system** built using the [RESTful API](https://www.redhat.co
 # Getting Down to Business...:woman_technologist:
 ## Features
 - The data dashboard that's developed in Java (SpringMVC) is consisted of a **controller**, two models (or POJO classes) named **data value object** and **data access object**.
-  - The Data dashboard controller enables us to populate the database when a user sends a [POST request](https://en.wikipedia.org/wiki/POST_(HTTP)#:~:text=In%20computing%2C%20POST%20is%20a,submitting%20a%20completed%20web%20form.) on the frontend, and the payload is transmitted in the request body and stored in the database.
+  - The Data dashboard controller enables us to populate the database when a user sends a [POST request](https://en.wikipedia.org/wiki/POST_(HTTP)#:~:text=In%20computing%2C%20POST%20is%20a,submitting%20a%20completed%20web%20form.) on the frontend, for example, create a new account on a shopping website, and the payload is transmitted in the request body and stored in the database.
   - The data access object is implemented as an interfce so that it can be implemented in other classes, and has two functions: save, which stores data into our database in the form of a key-value pair, and find by ID, which returns the corresponding ID from the database.
