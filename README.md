@@ -18,6 +18,8 @@ This is a **backend system** built using the [RESTful API](https://www.redhat.co
 - [x] To complete this project, I implemented unit tests and the line coverage was able to achieve **> 90%** using **Spring Boot Test**.
   - [MongoDB Compass](https://docs.mongodb.com/compass/current/?_ga=2.9969713.546031619.1643937027-838649943.1643937027) to customize data fields in the form of documents.
   - [Postman](https://www.postman.com/product/what-is-postman/) that sends POST requests.
+  - But to automate the testing process, I have implemented the Spring Boot Test template.
+    - After each test has completed, the test data is cleaned up so we don't pollute our test database.
 
 # Getting Down to Business... :woman_technologist:
 ## Features
