@@ -28,6 +28,8 @@ This is a **backend system** built using the [RESTful API](https://www.redhat.co
   - DI/IoC is a design pattern that is used to achieve **loose coupling** and **decoupling**.
   - The objects will not control themselves and their dependencies. Instead, an external container will control the creation of all objects and the management of their dependencies, so the object only needs to declare its dependencies without knowing the details (loose coupling).
   - The Java object managedby the IoC container is called the Bean, which is a Java class annotated by @Component.
+- Using [MongoDB](https://www.mongodb.com/atlas/database), a JSON-like document database with JSON-like query, as our primary database
+  - Why MongoDB over SQL? Data in MongoDB has a **flexible schema** while MySQL has a fixed schema. This flexibility enables this project (and many more) to adapt quick to fast changing feature requirement.
 
 # Guides and Tutorials that I Found Useful :goggles:
 - [Spring](https://spring.io/guides), and specifically [how to use Spring to build a RESTful web service](https://spring.io/guides/gs/rest-service/).
