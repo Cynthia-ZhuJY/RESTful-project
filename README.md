@@ -2,7 +2,7 @@
 
 This is a **backend system** built using the [RESTful API](https://www.redhat.com/en/topics/api/what-is-a-rest-api) that lets users submit and internal teams search user feedback emails and content data.
 
-## Languages/Frameworks In Use
+## Languages/Frameworks in use
 - [x] Java
 - [x] [Spring Boot](https://github.com/spring-projects)
 - [x] Spring Data
