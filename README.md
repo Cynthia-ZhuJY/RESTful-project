@@ -29,5 +29,5 @@ This is a **backend system** built using the [RESTful API](https://www.redhat.co
   - The objects will not control themselves and their dependencies. Instead, an external container will control the creation of all objects and the management of their dependencies, so the object only needs to declare its dependencies without knowing the details (loose coupling).
   - The Java object managedby the IoC container is called the Bean, which is a Java class annotated by @Component.
 
-# Guides and Tutorials that I Found Useful
+# Guides and Tutorials that I Found Useful:goggles:
 - [Spring](https://spring.io/guides), and specifically [how to use Spring to build a RESTful web service](https://spring.io/guides/gs/rest-service/).
