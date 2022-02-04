@@ -32,6 +32,7 @@ This is a **backend system** built using the [RESTful API](https://www.redhat.co
   - Why MongoDB over SQL? 
     - Data in MongoDB has a **flexible schema** while MySQL has a fixed schema. This flexibility enables this project (and many more) to adapt quick to fast changing feature requirement.
     - High availability and easier/simpler [horizontal scaling](https://www.mongodb.com/basics/horizontal-vs-vertical-scaling)/[sharding](https://www.mongodb.com/features/database-sharding-explained) solutions.
+    - We are not dealing with critical information (i.e., transactions, customer info, ect.) in this project, and we are only performing collection of search of data, so there's no need for [ACID](https://www.mongodb.com/basics/acid-transactions) or lock, which are operations that ensure the database inconsistent after a series of operations which are more mature in SQL.
 
 # Guides and Tutorials that I Found Useful :goggles:
 - [Spring](https://spring.io/guides), and specifically [how to use Spring to build a RESTful web service](https://spring.io/guides/gs/rest-service/).
