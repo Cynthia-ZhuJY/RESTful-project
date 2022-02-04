@@ -51,7 +51,8 @@ This is a **backend system** built using the [RESTful API](https://www.redhat.co
       - A stop token filter removes common words (stop words) like the from the token stream.
       - A synonym token filter introduces synonyms into the token stream.
   - [The Edge N-Gram Algorithm](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-edgengram-tokenizer.html)
-    - The edge_ngram tokenizer first breaks text down into words whenever it encounters one of a list of specified characters, then it emits N-grams of each word where the start of the N-gram is anchored to the beginning of the word.
+    - This algorithm enables the autocompletion in my search engine by attempting to complete a word from user input based on the first letter, then the first two letters, then the first three letters, etc.
+    - >The edge_ngram tokenizer first breaks text down into words whenever it encounters one of a list of specified characters, then it emits N-grams of each word where the start of the N-gram is anchored to the beginning of the word.
 
 # Guides and Tutorials that I Found Useful :goggles:
 - [Spring](https://spring.io/guides), and specifically [how to use Spring to build a RESTful web service](https://spring.io/guides/gs/rest-service/).
