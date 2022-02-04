@@ -24,7 +24,8 @@ This is a **backend system** built using the [RESTful API](https://www.redhat.co
 # Getting Down to Business... :woman_technologist:
 ## Features
 - The data dashboard that's developed in Java (SpringMVC) is consisted of a **controller**, two models (or POJO classes) named **data value object** and **data access object**.
-  - The data dashboard controller enables us to populate the database when a user sends a [POST request](https://en.wikipedia.org/wiki/POST_(HTTP)#:~:text=In%20computing%2C%20POST%20is%20a,submitting%20a%20completed%20web%20form.) on the frontend, for example, create a new account on a shopping website, and the payload is transmitted in the request body (@RequestBody) and stored in the database.
+  - The data dashboard controller enables us to populate the database when a user sends a [POST request]
+  - (https://en.wikipedia.org/wiki/POST_(HTTP)#:~:text=In%20computing%2C%20POST%20is%20a,submitting%20a%20completed%20web%20form.) on the frontend, for example, create a new account on a shopping website, and the payload is transmitted in the request body (@RequestBody) and stored in the database.
   - The data access object is implemented as an interfce so that it can be implemented in other classes, and has two functions: save, which stores data into our database in the form of a key-value pair, and find by ID, which returns the corresponding ID from the database.
 - **Dependency Injection / Inversion of Control**
   - DI/IoC is a design pattern that is used to achieve **loose coupling** and **decoupling**.
@@ -35,6 +36,22 @@ This is a **backend system** built using the [RESTful API](https://www.redhat.co
     - Data in MongoDB has a **flexible schema** while MySQL has a fixed schema. This flexibility enables this project (and many more) to adapt quick to fast changing feature requirement.
     - High availability and easier/simpler [horizontal scaling](https://www.mongodb.com/basics/horizontal-vs-vertical-scaling)/[sharding](https://www.mongodb.com/features/database-sharding-explained) solutions.
     - We are not dealing with critical information (i.e., transactions, customer info, ect.) in this project, and we are only performing collection of search of data, so there's no need for [ACID](https://www.mongodb.com/basics/acid-transactions) or lock, which are operations that ensure the database inconsistent after a series of operations which are more mature in SQL.
+- **Inverted Index**
+  - Implemented to record the mapping from stop words/noise to index.
+  - The underlying data structure is a B+ tree.
+- **Full-text search**
+  - The search engine analyzes every single word/token in every stored document.
+- **Elasticsearch**, a full-text search engine
+  - Character filters
+    -  A character filter receives the original text as a stream of characters and can transform the stream by adding, removing, or changing characters.
+  - Tokenizer
+    - A tokenizer receives a stream of characters, breaks it up into individual tokens (usually a stream of tokens), and outputs a stream of tokens.
+  - Token filters
+    - A token filter receives a stream of tokens and may add, remove, or change tokens.
+      - A stop token filter removes common words (stop words) like the from the token stream.
+      - A synonym token filter introduces synonyms into the token stream.
+  - [The Edge N-Gram Algorithm](https://www.elastic.co/guide/en/elasticsearch/reference/current/analysis-edgengram-tokenizer.html)
+    - The edge_ngram tokenizer first breaks text down into words whenever it encounters one of a list of specified characters, then it emits N-grams of each word where the start of the N-gram is anchored to the beginning of the word.
 
 # Guides and Tutorials that I Found Useful :goggles:
 - [Spring](https://spring.io/guides), and specifically [how to use Spring to build a RESTful web service](https://spring.io/guides/gs/rest-service/).
