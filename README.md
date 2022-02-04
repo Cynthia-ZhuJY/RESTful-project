@@ -19,7 +19,7 @@ This is a **backend system** built using the [RESTful API](https://www.redhat.co
   - [MongoDB Compass](https://docs.mongodb.com/compass/current/?_ga=2.9969713.546031619.1643937027-838649943.1643937027) to customize data fields in the form of documents.
   - [Postman](https://www.postman.com/product/what-is-postman/) that sends POST requests.
 
-# Getting Down to Business...:woman_technologist:
+# Getting Down to Business... :woman_technologist:
 ## Features
 - The data dashboard that's developed in Java (SpringMVC) is consisted of a **controller**, two models (or POJO classes) named **data value object** and **data access object**.
   - The data dashboard controller enables us to populate the database when a user sends a [POST request](https://en.wikipedia.org/wiki/POST_(HTTP)#:~:text=In%20computing%2C%20POST%20is%20a,submitting%20a%20completed%20web%20form.) on the frontend, for example, create a new account on a shopping website, and the payload is transmitted in the request body (@RequestBody) and stored in the database.
@@ -29,5 +29,5 @@ This is a **backend system** built using the [RESTful API](https://www.redhat.co
   - The objects will not control themselves and their dependencies. Instead, an external container will control the creation of all objects and the management of their dependencies, so the object only needs to declare its dependencies without knowing the details (loose coupling).
   - The Java object managedby the IoC container is called the Bean, which is a Java class annotated by @Component.
 
-# Guides and Tutorials that I Found Useful:goggles:
+# Guides and Tutorials that I Found Useful :goggles:
 - [Spring](https://spring.io/guides), and specifically [how to use Spring to build a RESTful web service](https://spring.io/guides/gs/rest-service/).
