@@ -16,8 +16,8 @@ This is a **backend system** built using the [RESTful API](https://www.redhat.co
 - [x] I integrated **[Kibana](https://www.elastic.co/kibana/)** with Elasticsearch for internal teams to explore and visualize. ~~Because we all love beautiful graphs!~~
 - [x] I wrote Swagger RESTful API documentation to improve  communication efficiency. 
 - [x] To complete this project, I implemented unit tests and the line coverage was able to achieve **> 90%** using **Spring Boot Test**.
-  - [MongoDB Compass](https://docs.mongodb.com/compass/current/?_ga=2.9969713.546031619.1643937027-838649943.1643937027) to customize data fields
-  - [Postman](https://www.postman.com/product/what-is-postman/) that sends POST requests
+  - [MongoDB Compass](https://docs.mongodb.com/compass/current/?_ga=2.9969713.546031619.1643937027-838649943.1643937027) to customize data fields in the form of documents.
+  - [Postman](https://www.postman.com/product/what-is-postman/) that sends POST requests.
 
 # Getting Down to Business...:woman_technologist:
 ## Features
