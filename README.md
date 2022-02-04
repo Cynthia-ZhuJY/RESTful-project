@@ -28,4 +28,4 @@ This is a **backend system** built using the [RESTful API](https://www.redhat.co
   - The Java object managedby the IoC container is called the Bean, which is a Java class annotated by @Component.
 
 # Guides and Tutorials that I Found Useful
-- [Spring](https://spring.io/guides)
+- [Spring](https://spring.io/guides), and specifically [how to use Spring to build a RESTful web service](https://spring.io/guides/gs/rest-service/).
