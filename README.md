@@ -54,9 +54,10 @@ This is a **backend system** built using the [RESTful API](https://www.redhat.co
     - This algorithm enables the autocompletion in my search engine by attempting to complete a word from user input based on the first letter, then the first two letters, then the first three letters, etc.
     - >The edge_ngram tokenizer first breaks text down into words whenever it encounters one of a list of specified characters, then it emits N-grams of each word where the start of the N-gram is anchored to the beginning of the word.
 - The Relevance Algorithm: **Term Frequency/Inverse Document Frequency**
-  - Term frequency is measured by how often a word appears in the field. Typically speaking, the more often, the *more* relevant.
-  - Inverse document frequency is measured by how often a term appears in the index. Terms that appear in many documents have a *lower weight* than more-uncommon words. Therefore, the more often, the *less* relevant.
-  - Field-length norm deals with the length of the field. The longer the field, the less likely the words in the field will be relevant. A term that appears in a short title field carries more weight than a term appearing in the long content field.
+  - **Term frequency** is measured by how often a word appears in the field. Typically speaking, the more often, the *more* relevant.
+  - **Inverse document frequency** is measured by how often a term appears in the index. Terms that appear in many documents have a *lower weight* than more-uncommon words. Therefore, the more often, the *less* relevant.
+  - **Field-length norm** deals with the length of the field. The longer the field, the less likely the words in the field will be relevant. A term that appears in a short title field carries more weight than a term appearing in the long content field.
 
 # Guides and Tutorials that I Found Useful :goggles:
 - [Spring](https://spring.io/guides), and specifically [how to use Spring to build a RESTful web service](https://spring.io/guides/gs/rest-service/).
+- [Ealstic](https://www.elastic.co/guide/index.html), great NLP search engine API's for fuzzy search and autocompletion.
